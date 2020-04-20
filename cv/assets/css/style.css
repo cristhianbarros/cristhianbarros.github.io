@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .languages-flags {
     text-align: left;
 }
+
 .languages-flags a img {
     width: 32px;
     height: 32px;
@@ -28,3 +33,4 @@ a.btn-download:hover {
     cursor: pointer;
     text-decoration: none;
 }
+
