@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Task Manager API",
+    "repo": "https://github.com/cristhianb91/task-manager-api",
+    "demo": "#",
+    "stack": ["Laravel", "JWT", "GitHub Actions"],
+    "summary": "API REST con seguridad, paginación y OpenAPI"
+  }
+]
