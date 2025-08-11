@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "npx tailwindcss -i ./src/styles.css -o ./src/main.css --watch",
-    "build": "rm -rf dist && mkdir -p dist/assets && npx tailwindcss -i ./src/styles.css -o ./dist/assets/main.css --minify && cp -R src/* dist/ && rm -f dist/styles.css && touch dist/.nojekyll"
+    "build": "rm -rf dist && mkdir -p dist/assets && npx tailwindcss -i ./src/styles.css -o ./dist/assets/main.css --minify && cp -R src/* dist/ && rm -f dist/styles.css && touch dist/.nojekyll && cp dist/index.html dist/404.html"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.9"
