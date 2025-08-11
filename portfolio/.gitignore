@@ -1,0 +1,37 @@
+# Dependencias
+node_modules/
+
+# Build
+dist/
+*.log
+
+# Configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Editor / IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Archivos de lock opcionales (si quieres ignorarlos)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Archivos de cache
+.npm
+.cache
