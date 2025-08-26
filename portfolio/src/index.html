@@ -1,151 +1,307 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cristhian Barros — Desarrollador PHP Senior</title>
-  <meta name="description" content="Desarrollador PHP (Laravel/Symfony) con 12+ años, APIs, DevOps básico, cloud y buenas prácticas. Portafolio y proyectos.">
-  <meta property="og:title" content="Portafolio — Cristhian Barros">
-  <meta property="og:description" content="Desarrollador PHP (Laravel/Symfony) con 12+ años.">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/main.css" />
-</head>
-<body class="bg-gradient-to-b from-gray-50 to-white text-gray-800 font-display">
-  <header class="mx-auto max-w-5xl px-6 py-10">
-    <nav class="flex items-center justify-between">
-      <a class="text-xl font-extrabold tracking-tight">CB.</a>
-      <div class="flex items-center gap-3">
-        <a class="btn bg-black text-white" href="https://github.com/cristhianbarros" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn border" href="mailto:tuemail@dominio.com">Contacto</a>
-      </div>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title id="title"></title>
+    <meta
+      name="description"
+      content="Desarrollador PHP (Laravel/Symfony) con 12+ años, APIs, DevOps básico, cloud y buenas prácticas. Portafolio y proyectos."
+    />
+    <meta property="og:title" content="Portafolio — Cristhian Barros" />
+    <meta
+      property="og:description"
+      content="Desarrollador PHP (Laravel/Symfony) con 12+ años."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
 
-  <main class="mx-auto max-w-5xl px-6 pb-24">
-    <!-- Hero -->
-    <section class="grid gap-8 md:grid-cols-3 md:items-center">
-      <div class="md:col-span-2">
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-          Desarrollador PHP Senior (Laravel/Symfony) <span class="text-gray-500">+</span> APIs <span class="text-gray-500">+</span> Cloud
-        </h1>
-        <p class="mt-4 text-lg text-gray-600">
-          12+ años construyendo soluciones web robustas. Me enfoco en código limpio, pruebas automatizadas y despliegues confiables. Busco roles con impacto y retos técnicos.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a class="btn bg-black text-white" href="#proyectos">Ver proyectos</a>
-          <a class="btn border" href="#experiencia">Experiencia</a>
-          <a class="btn border" href="CV_Cristhian_Barros.pdf">Descargar CV</a>
+  <body
+    class="bg-gradient-to-b from-gray-50 to-white text-gray-800 font-display"
+  >
+    <header class="mx-auto max-w-5xl px-6 py-10">
+      <nav class="flex items-center justify-between">
+        <a class="text-xl font-extrabold tracking-tight">CB.</a>
+        <div class="flex items-center gap-3">
+          <a
+            class="btn bg-black text-white"
+            href="https://github.com/cristhianbarros"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
+          <a class="btn border" href="mailto:cristhianbarros91@hotmail.com"
+            >Contacto</a
+          >
         </div>
-        <ul class="mt-6 flex flex-wrap gap-2 text-sm text-gray-500">
-          <li class="px-3 py-1 rounded-full border">PHP 8.x</li>
-          <li class="px-3 py-1 rounded-full border">Laravel 11</li>
-          <li class="px-3 py-1 rounded-full border">Symfony 7</li>
-          <li class="px-3 py-1 rounded-full border">MySQL/PostgreSQL</li>
-          <li class="px-3 py-1 rounded-full border">REST/GraphQL</li>
-          <li class="px-3 py-1 rounded-full border">Docker</li>
-          <li class="px-3 py-1 rounded-full border">GitHub Actions</li>
-          <li class="px-3 py-1 rounded-full border">AWS (S3/RDS)</li>
-        </ul>
-      </div>
-      <figure class="md:justify-self-end">
-        <img class="w-40 h-40 rounded-2xl object-cover border shadow" src="assets/avatar.jpg" alt="Foto de Cristhian" />
-      </figure>
-    </section>
+      </nav>
+    </header>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="mt-16">
-      <div class="flex items-end justify-between">
-        <h2 class="text-2xl font-bold">Proyectos destacados</h2>
-        <a class="text-sm text-gray-500 hover:underline" href="https://github.com/cristhianbarros?tab=repositories" target="_blank">Ver todos</a>
-      </div>
-
-      <div class="mt-6 grid gap-6 sm:grid-cols-2">
-        <!-- Proyecto 1 -->
-        <article class="card">
-          <h3 class="text-lg font-semibold">Task Manager API</h3>
-          <p class="mt-2 text-gray-600">API REST con Laravel 11 + JWT, Docker y CI/CD. Rate limiting, validaciones, paginación y OpenAPI.</p>
-          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-gray-500">
-            <li class="px-2 py-1 rounded-full border">Laravel</li>
-            <li class="px-2 py-1 rounded-full border">JWT</li>
-            <li class="px-2 py-1 rounded-full border">GitHub Actions</li>
-          </ul>
-          <div class="mt-4 flex gap-3">
-            <a class="btn border" href="https://github.com/cristhianbarros/task-manager-api" target="_blank">Repo</a>
-            <a class="btn bg-black text-white" href="#" target="_blank">Demo</a>
+    <main class="mx-auto max-w-5xl px-6 pb-24">
+      <!-- Hero -->
+      <section class="grid gap-8 md:grid-cols-3 md:items-center">
+        <div class="md:col-span-2">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Desarrollador PHP Seniorr (Laravel/Symfony)
+            <span class="text-gray-500">+</span> APIs
+            <span class="text-gray-500">+</span> Cloud
+          </h1>
+          <p class="mt-4 text-lg text-gray-600">
+            Ingeniero de Sistemas con más de 12 años construyendo APIs y
+            sistemas web de misión crítica en salud y ERP. Especialista en PHP
+            8.x / Laravel 10, MySQL y procesamiento de datos a gran escala (CSV
+            > 1M registros), con foco en rendimiento, mantenibilidad (SOLID) y
+            automatización (cron/colas). He liderado ciclos end-to-end desde el
+            análisis hasta despliegue, logrando mejoras de 40%-90% en
+            rendimiento y reducción de uso de memoria. Me desenvuelvo
+            eficazmente de forma individual como en equipo.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="btn bg-black text-white" href="#proyectos"
+              >Ver proyectos</a
+            >
+            <a class="btn border" href="#experiencia">Experiencia</a>
+            <a class="btn border" href="./assets/cv_es.pdf" target="_blank"
+              >Descargar CV</a
+            >
           </div>
-        </article>
-
-        <!-- Proyecto 2 -->
-        <article class="card">
-          <h3 class="text-lg font-semibold">Book Store App</h3>
-          <p class="mt-2 text-gray-600">Fullstack (Laravel + Vue 3). Autenticación JWT, filtros, tests E2E con Cypress y documentación.</p>
-          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-gray-500">
-            <li class="px-2 py-1 rounded-full border">Laravel</li>
-            <li class="px-2 py-1 rounded-full border">Vue 3</li>
-            <li class="px-2 py-1 rounded-full border">Cypress</li>
+          <ul class="mt-6 flex flex-wrap gap-2 text-sm text-gray-500">
+            <li class="px-3 py-1 rounded-full border">PHP 5.x, 7.x, 8.x</li>
+            <li class="px-3 py-1 rounded-full border">Laravel 11</li>
+            <li class="px-3 py-1 rounded-full border">MySQL/PostgreSQL</li>
+            <li class="px-3 py-1 rounded-full border">REST</li>
+            <li class="px-3 py-1 rounded-full border">Docker</li>
+            <li class="px-3 py-1 rounded-full border">GitHub Actions</li>
+            <li class="px-3 py-1 rounded-full border">AWS (EC2,S3,RDS)</li>
           </ul>
-          <div class="mt-4 flex gap-3">
-            <a class="btn border" href="https://github.com/cristhianbarros/book-store-app" target="_blank">Repo</a>
-            <a class="btn bg-black text-white" href="#" target="_blank">Demo</a>
-          </div>
-        </article>
-
-        <!-- Proyecto 3 -->
-        <article class="card">
-          <h3 class="text-lg font-semibold">Report Generator Microservice</h3>
-          <p class="mt-2 text-gray-600">Microservicio para PDF/Excel con colas (Redis), almacenamiento S3 y despliegue en AWS.</p>
-          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-gray-500">
-            <li class="px-2 py-1 rounded-full border">Queues</li>
-            <li class="px-2 py-1 rounded-full border">Redis</li>
-            <li class="px-2 py-1 rounded-full border">AWS S3</li>
-          </ul>
-          <div class="mt-4 flex gap-3">
-            <a class="btn border" href="https://github.com/cristhianbarros/report-generator-ms" target="_blank">Repo</a>
-            <a class="btn bg-black text-white" href="#" target="_blank">Demo</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Experiencia -->
-    <section id="experiencia" class="mt-16">
-      <h2 class="text-2xl font-bold">Experiencia</h2>
-      <div class="mt-6 grid gap-4">
-        <article class="card">
-          <h3 class="font-semibold">Desarrollador PHP Senior — Empresa X</h3>
-          <p class="text-sm text-gray-500">2019–2025</p>
-          <ul class="mt-2 list-disc pl-5 text-gray-700">
-            <li>Diseñé e implementé APIs REST en Laravel 8→11 con autenticación JWT/OAuth2.</li>
-            <li>Mejoré tiempos de respuesta en 35% mediante caching (Redis) y Eloquent tuning.</li>
-            <li>Introduje CI/CD con GitHub Actions, reduciendo errores de despliegue en 60%.</li>
-          </ul>
-        </article>
-        <!-- Añade más experiencias -->
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="mt-16">
-      <div class="card flex flex-col md:flex-row md:items-center md:justify-between">
-        <div>
-          <h3 class="text-xl font-bold">¿Hablamos?</h3>
-          <p class="text-gray-600">Abierto a roles remotos/híbridos. Interesado en retos con alto impacto.</p>
         </div>
-        <a class="btn bg-black text-white mt-4 md:mt-0" href="mailto:tuemail@dominio.com">Escríbeme</a>
+        <figure class="md:justify-self-end">
+          <img
+            class="w-40 h-40 rounded-2xl object-cover border shadow"
+            src="assets/avatar.jpeg"
+            alt="Foto de Cristhian"
+          />
+        </figure>
+      </section>
+
+      <!-- Proyectos -->
+      <section id="proyectos" class="mt-16">
+        <div class="flex items-end justify-between">
+          <h2 class="text-2xl font-bold">Proyectos destacados</h2>
+          <a
+            class="text-sm text-gray-500 hover:underline"
+            href="https://github.com/cristhianbarros?tab=repositories"
+            target="_blank"
+            >Ver todos</a
+          >
+        </div>
+
+        <div class="mt-6 grid gap-6 sm:grid-cols-2">
+          <!-- Proyecto 1 -->
+          <article class="card">
+            <h3 class="text-lg font-semibold">Portafolio</h3>
+            <p class="mt-2 text-gray-600">
+              Sitio Web Estático Hecho con Tailwind + GitHub Pages.
+            </p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs text-gray-500">
+              <li class="px-2 py-1 rounded-full border">HTML/CSS/JS</li>
+              <li class="px-2 py-1 rounded-full border">CI</li>
+              <li class="px-2 py-1 rounded-full border">GitHub Pages</li>
+              <li class="px-2 py-1 rounded-full border">GitHub Actions</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a
+                class="btn border"
+                href="https://github.com/cristhianbarros/cristhianbarros.github.io"
+                target="_blank"
+                >Repo</a
+              >
+              <!--
+              <a class="btn bg-black text-white" href="#" target="_blank"
+                >Demo</a
+              >-->
+            </div>
+          </article>
+          <!--
+          <article class="card">
+            <h3 class="text-lg font-semibold">Task Manager API</h3>
+            <p class="mt-2 text-gray-600">
+              API REST con Laravel 11 + JWT, Docker y CI/CD. Rate limiting,
+              validaciones, paginación y OpenAPI.
+            </p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs text-gray-500">
+              <li class="px-2 py-1 rounded-full border">Laravel</li>
+              <li class="px-2 py-1 rounded-full border">JWT</li>
+              <li class="px-2 py-1 rounded-full border">GitHub Actions</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a
+                class="btn border"
+                href="https://github.com/cristhianbarros/task-manager-api"
+                target="_blank"
+                >Repo</a
+              >
+              <a class="btn bg-black text-white" href="#" target="_blank"
+                >Demo</a
+              >
+            </div>
+          </article>
+          
+          <article class="card">
+            <h3 class="text-lg font-semibold">Book Store App</h3>
+            <p class="mt-2 text-gray-600">
+              Fullstack (Laravel + Vue 3). Autenticación JWT, filtros, tests E2E
+              con Cypress y documentación.
+            </p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs text-gray-500">
+              <li class="px-2 py-1 rounded-full border">Laravel</li>
+              <li class="px-2 py-1 rounded-full border">Vue 3</li>
+              <li class="px-2 py-1 rounded-full border">Cypress</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a
+                class="btn border"
+                href="https://github.com/cristhianbarros/book-store-app"
+                target="_blank"
+                >Repo</a
+              >
+              <a class="btn bg-black text-white" href="#" target="_blank"
+                >Demo</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="text-lg font-semibold">Report Generator Microservice</h3>
+            <p class="mt-2 text-gray-600">
+              Microservicio para PDF/Excel con colas (Redis), almacenamiento S3
+              y despliegue en AWS.
+            </p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs text-gray-500">
+              <li class="px-2 py-1 rounded-full border">Queues</li>
+              <li class="px-2 py-1 rounded-full border">Redis</li>
+              <li class="px-2 py-1 rounded-full border">AWS S3</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a
+                class="btn border"
+                href="https://github.com/cristhianbarros/report-generator-ms"
+                target="_blank"
+                >Repo</a
+              >
+              <a class="btn bg-black text-white" href="#" target="_blank"
+                >Demo</a
+              >
+            </div>
+          </article>
+          -->
+        </div>
+      </section>
+
+      <!-- Experiencia -->
+      <section id="experiencia" class="mt-16">
+        <h2 class="text-2xl font-bold">Experiencia</h2>
+        <div class="mt-6 grid gap-4">
+          <article class="card">
+            <h3 class="font-semibold">Analista de Desarrollo — Cidenet S.A</h3>
+            <p class="text-sm text-gray-500">Nov 2020 – Actualmente</p>
+            <ul class="mt-2 list-disc pl-5 text-gray-700">
+              <li>
+                Diseñé e implementé APIs y aplicaciones PHP/Laravel en un
+                entorno colaborativo bajo SCRUM con trazabilidad en JIRA.
+              </li>
+              <li>
+                –40% en tiempos de respuesta del Portal Toyota (gestión de
+                pacientes) mediante índices, paginación y refactor de consultas
+                sobre HIS externo (MySQL).
+              </li>
+              <li>
+                –90% en duración de cron para facturación y cargos SAP (CSV >1M
+                filas) con procesamiento en paralelo, streams y eliminación de
+                cuellos de botella (memoria y filtros)
+              </li>
+              <li>
+                Generación de reportes Excel de gran volumen con bajo consumo de
+                memoria y automatizaciones adicionales (crones).
+              </li>
+              <li>
+                Flutter (Android): propuse e implementé mejoras backend/frontend
+                para rendimiento y adopción
+              </li>
+              <li>
+                Definí MVC desde cero con POO y SOLID para formularios de
+                historias clínicas electrónicas; análisis de versión legado y
+                actualización integral de estructura y lógica.
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="font-semibold">
+              Desarrollador de Software — Ingeniería Especializada S.A
+            </h3>
+            <p class="text-sm text-gray-500">Nov 2012 – Nov 2020</p>
+            <ul class="mt-2 list-disc pl-5 text-gray-700">
+              <li>
+                API de correos + Web: base con Laravel, Blade/Bootstrap 5, colas
+                para envío asincrónico; adjuntos en PostgreSQL (JSONB) para
+                seguimiento de estados (Enviados/En Cola).
+              </li>
+              <li>
+                Desarrollo del ERP Sigmas (balance scorecard): módulos
+                empleados/tiempos/comercial/financiero, + módulo de capacitación
+                con gestión de eventos/sesiones/asistencia.
+              </li>
+              <li>
+                Trabajo directo con usuarios finales para levantar requisitos y
+                priorizar cambios,
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="mt-16">
+        <div
+          class="card flex flex-col md:flex-row md:items-center md:justify-between"
+        >
+          <div>
+            <h3 class="text-xl font-bold">¿Hablamos?</h3>
+            <p class="text-gray-600">
+              Abierto a roles remotos/híbridos. Interesado en retos con alto
+              impacto.
+            </p>
+          </div>
+          <a
+            class="btn bg-black text-white mt-4 md:mt-0"
+            href="mailto:cristhianbarros91@hotmail.com"
+            >Escríbeme</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t py-8 mt-20">
+      <div class="mx-auto max-w-5xl px-6 text-sm text-gray-500">
+        © <span id="y"></span> <label id="footer-name"></label>. Hecho con
+        Tailwind + GitHub Pages.
       </div>
-    </section>
-  </main>
+    </footer>
+    <script>
+      const me = {
+        name: "Cristhian Andrés Barros",
+        role: "Desarrollador Senior PHP",
+        mail: "cristhianbarros91@hotmail.com",
+      };
 
-  <footer class="border-t py-8 mt-20">
-    <div class="mx-auto max-w-5xl px-6 text-sm text-gray-500">
-      © <span id="y"></span> Cristhian Barros. Hecho con Tailwind + GitHub Pages.
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
+      document.getElementById("footer-name").textContent = me.name;
+      document.getElementById("y").textContent = new Date().getFullYear();
+      document.getElementById("title").textContent = me.name + " — " + me.role;
+    </script>
+  </body>
 </html>

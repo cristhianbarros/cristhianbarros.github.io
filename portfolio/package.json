@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/styles.css -o ./src/main.css --watch",
-    "build": "rm -rf dist && mkdir -p dist/assets && npx tailwindcss -i ./src/styles.css -o ./dist/assets/main.css --minify && cp -R src/* dist/ && rm -f dist/styles.css && touch dist/.nojekyll && cp dist/index.html dist/404.html"
+    "dev": "npx tailwindcss -i ./src/styles.css -o ./src/assets/main.css --watch",
+    "serve:src": "npx http-server ./src -p 5173 -c-1",
+    "serve:dist": "npx http-server ./dist -p 4173 -c-1",
+    "build": "npx rimraf dist && npx shx mkdir -p dist/assets && npx tailwindcss -i ./src/styles.css -o ./dist/assets/main.css --minify && npx shx cp -R src/* dist/ && npx rimraf dist/styles.css && npx shx touch dist/.nojekyll && npx shx cp dist/index.html dist/404.html"
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
+    "shx": "^0.3.4",
     "tailwindcss": "^3.4.9"
   }
 }
