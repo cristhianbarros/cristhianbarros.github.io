@@ -7,8 +7,9 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  pages: write         # requerido por deploy-pages
+  id-token: write      # requerido por deploy-pages
+  packages: read       # <-- NECESARIO solo si instalas deps desde GitHub Packages
 
 concurrency:
   group: "pages"
@@ -24,18 +25,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5  # recomendado por GitHub
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
           cache-dependency-path: portfolio/package-lock.json
-
-      - name: Use public npm registry (avoid 403)
-        run: |
-          npm config set registry https://registry.npmjs.org/
-          npm config set always-auth false
-          npm ping --registry=https://registry.npmjs.org/
 
       - name: Install deps
         run: npm ci
